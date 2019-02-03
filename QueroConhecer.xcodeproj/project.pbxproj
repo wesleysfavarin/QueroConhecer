@@ -12,6 +12,11 @@
 		0481043722031885005475E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0481043522031885005475E9 /* Main.storyboard */; };
 		0481043922031887005475E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0481043822031887005475E9 /* Assets.xcassets */; };
 		0481043C22031887005475E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0481043A22031887005475E9 /* LaunchScreen.storyboard */; };
+		0481044422031C03005475E9 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481044322031C03005475E9 /* PlacesTableViewController.swift */; };
+		0481044622031C7F005475E9 /* PlaceFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481044522031C7F005475E9 /* PlaceFinderViewController.swift */; };
+		0481044822032EAE005475E9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481044722032EAE005475E9 /* MapViewController.swift */; };
+		0481044A2204AAE7005475E9 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048104492204AAE7005475E9 /* Place.swift */; };
+		0481044C22060491005475E9 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481044B22060491005475E9 /* PlaceAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		0481043822031887005475E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0481043B22031887005475E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0481043D22031887005475E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0481044322031C03005475E9 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
+		0481044522031C7F005475E9 /* PlaceFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceFinderViewController.swift; sourceTree = "<group>"; };
+		0481044722032EAE005475E9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		048104492204AAE7005475E9 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		0481044B22060491005475E9 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,11 @@
 				0481043122031884005475E9 /* AppDelegate.swift */,
 				0481043322031884005475E9 /* ViewController.swift */,
 				0481043522031885005475E9 /* Main.storyboard */,
+				048104492204AAE7005475E9 /* Place.swift */,
+				0481044722032EAE005475E9 /* MapViewController.swift */,
+				0481044522031C7F005475E9 /* PlaceFinderViewController.swift */,
+				0481044322031C03005475E9 /* PlacesTableViewController.swift */,
+				0481044B22060491005475E9 /* PlaceAnnotation.swift */,
 				0481043822031887005475E9 /* Assets.xcassets */,
 				0481043A22031887005475E9 /* LaunchScreen.storyboard */,
 				0481043D22031887005475E9 /* Info.plist */,
@@ -137,6 +152,11 @@
 			files = (
 				0481043422031884005475E9 /* ViewController.swift in Sources */,
 				0481043222031884005475E9 /* AppDelegate.swift in Sources */,
+				0481044622031C7F005475E9 /* PlaceFinderViewController.swift in Sources */,
+				0481044A2204AAE7005475E9 /* Place.swift in Sources */,
+				0481044822032EAE005475E9 /* MapViewController.swift in Sources */,
+				0481044422031C03005475E9 /* PlacesTableViewController.swift in Sources */,
+				0481044C22060491005475E9 /* PlaceAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TMBBB4Z65G;
 				INFOPLIST_FILE = QueroConhecer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesleysfavarin.swiftquis.QueroConhecer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TMBBB4Z65G;
 				INFOPLIST_FILE = QueroConhecer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesleysfavarin.swiftquis.QueroConhecer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
